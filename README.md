@@ -17,11 +17,13 @@ Issues can be reported to the project on [Github](https://github.com/RasmusTidse
 
 ### Rebuild the VS Code extension
 
- git clone https://github.com/RasmusTidselbak/al-formatter.git
- cd al-formatter/client
- npm install -D
- export PATH=`pwd`/node_modules/.bin:$PATH
- vsce package
+```
+git clone https://github.com/RasmusTidselbak/al-formatter.git
+cd al-formatter/client
+npm install -D
+export PATH=`pwd`/node_modules/.bin:$PATH
+vsce package
+```
 
 ### In Development
 - RDLC Reports
