@@ -31,7 +31,8 @@
     "@types/mocha": "^2.2.43",
     "@types/node": "^6.0.88",
     "typescript": "^2.5.2",
-    "vscode": "^1.0.3"
+    "vsce": "^1.83.0",
+    "vscode": "^1.1.5"
   },
   "contributes": {
     "configuration": {
@@ -52,7 +53,6 @@
     }
   },
   "dependencies": {
-    "vscode": "^1.1.5",
     "vscode-languageclient": "^3.4.5"
   }
 }
