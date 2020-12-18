@@ -19,7 +19,11 @@ Issues can be reported to the project on [Github](https://github.com/RasmusTidse
 
 ```
 git clone https://github.com/RasmusTidselbak/al-formatter.git
-cd al-formatter/client
+cd al-formatter/server
+npm install -D
+export PATH=`pwd`/node_modules/.bin:$PATH
+npm run compile
+cd ../client
 npm install -D
 export PATH=`pwd`/node_modules/.bin:$PATH
 vsce package
