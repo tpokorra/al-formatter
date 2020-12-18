@@ -1,14 +1,14 @@
 {
   "name": "al-formatter",
   "description": "Formatting AL code, fixes indenting, casing and variable sorting",
-  "author": "Rasmus Aaen",
+  "author": "Rasmus Aaen and Timotheus Pokorra",
   "license": "MIT",
-  "version": "2.1.0",
-  "publisher": "rasmus",
+  "version": "3.1.0",
+  "publisher": "tpokorra",
   "icon": "images/logo128.png",
   "repository": {
     "type": "git",
-    "url": "https://rasmustidselbak@bitbucket.org/rasmustidselbak/al-formatter.git"
+    "url": "https://github.com/tpokorra/al-formatter.git"
   },
   "displayName": "AL Formatter",
   "engines": {
