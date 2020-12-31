@@ -149,6 +149,9 @@ export class IndentationHandler {
               if (this.level[this.level.length - 1] === "CaptionML") {
                 this.level.pop();
               }
+              if (this.level[this.level.length - 1] === "Permissions") {
+                this.level.pop();
+              }
               if (this.level[this.level.length - 1] === "TableRelation") {
                 this.level.pop();
               }
@@ -190,6 +193,11 @@ export class IndentationHandler {
             case "TextConst".toLowerCase():
               if (!KeywordHandler.keywordExists(";", words)) {
                 this.level.push("CaptionML");
+              }
+              break;
+            case "Permissions".toLowerCase():
+              if (!KeywordHandler.keywordExists(";", words)) {
+                this.level.push("Permissions");
               }
               break;
             case "TableRelation".toLowerCase():
