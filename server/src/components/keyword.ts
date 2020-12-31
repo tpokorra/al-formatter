@@ -107,7 +107,7 @@ export class KeywordHandler {
       "Format",
       "RunModal",
       "Run",
-      "Action",
+      "action",
       "SetTableView",
       "Update",
       "Insert",

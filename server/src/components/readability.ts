@@ -103,9 +103,12 @@ export class ReadabilityHandler {
         }
         break;
       case ".":
-      case ",":
         spacing.before = false;
         spacing.after = false;
+        break;
+      case ",":
+        spacing.before = false;
+        spacing.after = true;
         break;
       case "<":
       case ">":
