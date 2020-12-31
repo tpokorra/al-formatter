@@ -91,7 +91,7 @@ export class ReadabilityHandler {
         if (
           this.words[index - 1] === "or" ||
           this.words[index - 1] === "and" ||
-          this.words[index - 1] === "not" ||
+          // this.words[index - 1] === "not" ||
           this.words[index - 1] === "<" ||
           this.words[index - 1] === ">" ||
           this.words[index - 1] === "-" ||
