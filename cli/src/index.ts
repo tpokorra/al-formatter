@@ -29,9 +29,9 @@ function AlFormatterFile(filepath) {
         let doc = data
 
         doc = keywordHandler.casing(doc);
-        //doc = variableHandler.sort(doc);
-        //doc = readabilityHandler.spacing(doc);
-        //doc = indentationHandler.indent(doc, tabSize);
+        doc = variableHandler.sort(doc);
+        doc = readabilityHandler.spacing(doc);
+        doc = indentationHandler.indent(doc, tabSize);
 
         if (doc != data) {
             fs.writeFile(filepath, doc, 'utf8', function (err) {
