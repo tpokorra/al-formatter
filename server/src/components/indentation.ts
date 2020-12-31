@@ -15,7 +15,13 @@ export class IndentationHandler {
 
     this.lines.forEach((line, i) => {
       this.indentCurr(line, i);
-      this.edits.push(`${this.genTabs(this.indents)}${line.trim()}`);
+      if (line.trim().length > 0) {
+        this.edits.push(`${this.genTabs(this.indents)}${line.trim()}`);
+      }
+      else
+      {
+        this.edits.push('');
+      }
       this.indentNext(line, i);
     });
 
